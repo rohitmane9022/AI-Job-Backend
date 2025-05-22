@@ -5,7 +5,7 @@ require('dotenv').config();
 const connectDB = require('./db/connect');
 const jobRoutes = require('./routes/jobRoutes');
 const authRoutes = require('./routes/authRoutes');
-const recommendationRoutes = require('./routes/recommendations');
+// const recommendationRoutes = require('./routes/recommendations');
 
 const app = express(connectDB());
 
@@ -16,7 +16,7 @@ app.use(express.json());
 //Routes Check
 app.use('/api/auth', authRoutes);
 app.use('/api/jobs', jobRoutes);
-app.use('/api/job-recommendations', recommendationRoutes);
+// app.use('/api/job-recommendations', recommendationRoutes);
 
 app.get("/",(req,res)=>{
     res.send("hello check")
