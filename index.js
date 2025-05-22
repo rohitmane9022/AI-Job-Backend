@@ -12,7 +12,7 @@ connectDB()
 
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://ai-job-frontends.vercel.app/',
   credentials: true,
 };
 
